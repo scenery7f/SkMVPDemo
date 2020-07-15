@@ -2,6 +2,17 @@
 
 [![](https://jitpack.io/v/scenery7f/SkMVPDemo.svg)](https://jitpack.io/#scenery7f/SkMVPDemo)
 
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+    
+dependencies {
+        implementation 'com.github.scenery7f:SkMVPDemo:Tag'
+}
+
 使用SkMVPDagger.jar快速创建相应文件
 
 
