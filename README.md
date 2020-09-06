@@ -23,6 +23,8 @@ compileOptions {
 
 // dagger
 annotationProcessor 'com.google.dagger:dagger-compiler:2.27' // 要放到项目的gradle中
+// 控件绑定
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
 继承BaseApplication
 
