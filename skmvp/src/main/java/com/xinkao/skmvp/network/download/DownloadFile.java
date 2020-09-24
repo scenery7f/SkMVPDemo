@@ -82,7 +82,6 @@ public class DownloadFile {
                     public Integer apply(InputStream inputStream) throws Exception {
                         Exception e = FileUtils.writeFile(inputStream, filePath);
                         if (e == null) {
-                            observer.onComplete();
                             return 100;
                         } else {
                             observer.onError(e);
