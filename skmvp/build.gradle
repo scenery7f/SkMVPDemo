@@ -63,11 +63,11 @@ dependencies {
     api 'com.orhanobut:logger:2.2.0'
 
     // retrofit2
-    api('com.squareup.retrofit2:retrofit:2.8.0') {
+    api('com.squareup.retrofit2:retrofit:2.7.1') {
         exclude module: 'okio'
         exclude module: 'okhttp'
     }
-    api('com.squareup.retrofit2:adapter-rxjava2:2.8.0') {
+    api('com.squareup.retrofit2:adapter-rxjava2:2.7.1') {
         exclude module: 'rxjava'
         exclude module: 'okhttp'
         exclude module: 'okio'
