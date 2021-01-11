@@ -11,8 +11,7 @@ import com.orhanobut.logger.Logger;
 import com.xinkao.skmvp.dagger.component.AppComponent;
 import com.xinkao.skmvp.dagger.component.DaggerAppComponent;
 import com.xinkao.skmvp.network.RetrofitManager;
-
-import es.dmoral.toasty.MyToast;
+import com.xinkao.skmvp.utils.MyToast;
 
 public abstract class BaseApplication extends Application implements IApplication, IAppManager {
 
@@ -40,7 +39,7 @@ public abstract class BaseApplication extends Application implements IApplicatio
 
         RetrofitManager.config(isDebug());
 
-        MyToast.init(this, isDebug(), false);
+        MyToast.init(this);
 
         initConfig();
     }

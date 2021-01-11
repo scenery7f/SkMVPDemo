@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import es.dmoral.toasty.MyToast;
-
 public interface IView {
     Context getContext();
 
@@ -38,8 +36,6 @@ public interface IView {
     default void startUseIntent(Intent intent) {
         startUseIntent(false, intent);
     }
-
-    ;
 
     void startUseIntent(boolean needFinish, Intent intent);
 

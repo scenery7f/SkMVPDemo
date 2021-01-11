@@ -12,6 +12,7 @@ import com.orhanobut.logger.Logger;
 import com.xinkao.skmvp.base.BaseApplication;
 import com.xinkao.skmvp.mvp.presenter.IPresenter;
 import com.xinkao.skmvp.utils.CustomProgressDialog;
+import com.xinkao.skmvp.utils.MyToast;
 
 import javax.inject.Inject;
 
@@ -22,7 +23,6 @@ import androidx.fragment.app.Fragment;
 import java.util.Objects;
 
 import butterknife.ButterKnife;
-import es.dmoral.toasty.MyToast;
 
 public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IFragment, IView {
 

@@ -8,6 +8,7 @@ import android.os.Looper;
 import com.xinkao.skmvp.base.BaseApplication;
 import com.xinkao.skmvp.mvp.presenter.IPresenter;
 import com.xinkao.skmvp.utils.CustomProgressDialog;
+import com.xinkao.skmvp.utils.MyToast;
 
 import javax.inject.Inject;
 
@@ -15,7 +16,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
-import es.dmoral.toasty.MyToast;
 
 public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivity implements IActivity, IView {
 
