@@ -49,12 +49,12 @@ dependencies {
 //    api 'com.google.dagger:dagger-android-support:2.27' // if you use the support librari
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.27'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.27' // 要放到项目的gradle中
-    // 控件绑定
-    api ('com.jakewharton:butterknife:10.2.1') {
-        exclude module: 'annotation'
-        exclude module: 'core'
-    }
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1' // 要放到项目的gradle中
+//    // 控件绑定
+//    api ('com.jakewharton:butterknife:10.2.1') {
+//        exclude module: 'annotation'
+//        exclude module: 'core'
+//    }
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1' // 要放到项目的gradle中
 
     // gson
     api 'com.google.code.gson:gson:2.8.6'

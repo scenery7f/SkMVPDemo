@@ -6,15 +6,12 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import butterknife.ButterKnife;
-
 public abstract class SkRecyclerViewHolder<T> extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     protected OnViewClickListener mOnViewClickListener = null;
 
     public SkRecyclerViewHolder(@NonNull View itemView) {
         super(itemView);
-        ButterKnife.bind(this, itemView);
 
         itemView.setOnClickListener(this);
     }

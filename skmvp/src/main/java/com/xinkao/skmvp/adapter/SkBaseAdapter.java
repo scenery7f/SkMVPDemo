@@ -16,8 +16,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-import butterknife.ButterKnife;
-
 public abstract class SkBaseAdapter<T> extends BaseAdapter implements LifecycleObserver {
 
     protected List<T> mDataList;
@@ -81,7 +79,7 @@ public abstract class SkBaseAdapter<T> extends BaseAdapter implements LifecycleO
 
     protected abstract class BaseHolder {
         public BaseHolder(View view) {
-            ButterKnife.bind(this, view);
+
         }
 
         protected abstract void setData(View view, T bean, int position);

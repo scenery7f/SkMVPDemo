@@ -15,8 +15,6 @@ import javax.inject.Inject;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import butterknife.ButterKnife;
-
 public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivity implements IActivity, IView {
 
     @Inject
@@ -46,9 +44,6 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
         boolean doInitLoadData = dataRecovery(savedInstanceState);
 
         setContentView(getContentView());
-
-        // 绑定控件
-        ButterKnife.bind(this);
 
         initBindWidget();
 

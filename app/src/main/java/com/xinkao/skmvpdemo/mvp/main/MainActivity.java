@@ -1,17 +1,18 @@
 package com.xinkao.skmvpdemo.mvp.main;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+import android.view.View;
 
 import com.xinkao.skmvp.mvp.view.BaseActivity;
-import com.xinkao.skmvpdemo.R;
+import com.xinkao.skmvpdemo.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity<MainContract.P> implements MainContract.V {
 
+    ActivityMainBinding binding;
+
     @Override
-    public int getContentView() {
-        return R.layout.activity_main;
+    public View getContentView() {
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        return binding.getRoot();
     }
 
 }

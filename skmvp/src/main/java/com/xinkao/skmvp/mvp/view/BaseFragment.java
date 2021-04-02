@@ -22,8 +22,6 @@ import androidx.fragment.app.Fragment;
 
 import java.util.Objects;
 
-import butterknife.ButterKnife;
-
 public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IFragment, IView {
 
     public BaseFragment() {
@@ -74,11 +72,6 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        /**
-         * 自定绑定控件
-         * */
-        ButterKnife.bind(this, view);
 
         /**
          * 3、绑定控件

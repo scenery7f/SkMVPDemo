@@ -1,13 +1,15 @@
 package com.xinkao.skmvp.mvp.view;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.xinkao.skmvp.dagger.component.AppComponent;
 
 public interface IActivity {
     default boolean checkDataBefoAll(){return true;};
     default void registerDagger(AppComponent appComponent){}
-    int getContentView();
+//    int getContentView();
+    View getContentView();
 
     /**
      * @param savedInstanceState
